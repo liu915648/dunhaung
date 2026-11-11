@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
+    <title>特产美食</title>
+
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- 引入基本框架 -->
+    <script src="js/jquery.js"></script>
+    <!-- 框架库 -->
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+
+    <!-- ================= 顶部导航 ================= -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <div class="brand">
+                <span class="brand-main">敦煌</span>
+                <span class="brand-sub">一眼千年</span>
+            </div>
+            <button type="button" class="nav-toggle" id="navToggle" aria-label="展开导航">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">首页</a>
+                <a href="敦煌文化.html">敦煌文化</a>
+                <a href="景点介绍.html">景点介绍</a>
+                <a href="特产美食.html" class="active">特产美食</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= 首屏 ================= -->
+    <section class="food-hero">
+        <img class="food-hero-img"
+             src="images/夜市.jpg"
+             alt="夜市">
+        <div class="food-hero-overlay"></div>
+        <div class="food-hero-content">
+            <p class="culture-eyebrow">FLAVORS OF DUNHUANG</p>
+            <h1>吃在敦煌</h1>
+            <p class="culture-sub">一碗黄面，一杯杏皮水，就是这座城最日常的味道</p>
+        </div>
+        <p class="culture-hero-loc">敦煌・沙洲夜市</p>
+    </section>
+
+    <!-- ================= 引言 ================= -->
+    <section class="food-intro">
+        <div class="wrap">
+            <p class="food-intro-lead">敦煌的饮食是丝路的产物。</p>
+            <p class="food-intro-text">面从中原来，羊从草原来，杏与瓜从绿洲来。</p>
+        </div>
+    </section>
+
+    <!-- ================= 分区一：现场必吃 ================= -->
+    <section class="food-section">
+        <div class="wrap">
+            <header class="food-section-head">
+                <p class="section-eyebrow">PART ONE</p>
+                <h2 class="section-heading">现场必吃</h2>
+                <p class="food-section-note">坐在店里，趁热吃。</p>
+            </header>
+
+            <div class="food-grid">
+
+                <article class="food-card">
+                    <div class="food-media">
+                        <img src="images/驴肉黄面.jpg"
+                             alt="驴肉黄面">
+                    </div>
+                    <div class="food-body">
+                        <h3 class="food-name">驴肉黄面</h3>
+                        <p class="food-desc">敦煌头号名吃。黄面用蓬灰水和面，拉成细丝，筋道弹牙；驴肉切丁加香菇、木耳炒成臊子浇在上面。「天上龙肉，地上驴肉」说的就是它。</p>
+                        <dl class="food-meta">
+                            <div class="food-meta-row"><dt>参考价</dt><dd>约 20–30 元 / 份</dd></div>
+                            <div class="food-meta-row"><dt>去哪吃</dt><dd>市区驴肉黄面馆（达记一类老店），沙洲夜市也有</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-media">
+                        <img src="images/羊肉粉汤.jpg"
+                             alt="羊肉粉汤">
+                    </div>
+                    <div class="food-body">
+                        <h3 class="food-name">羊肉粉汤</h3>
+                        <p class="food-desc">敦煌人的早餐。羊骨熬汤，下粉条、羊肉片，撒胡椒和香菜，配一个馍掰着吃。清早一碗，抵一上午的风。</p>
+                        <dl class="food-meta">
+                            <div class="food-meta-row"><dt>参考价</dt><dd>约 15–25 元</dd></div>
+                            <div class="food-meta-row"><dt>去哪吃</dt><dd>老城区早餐铺，早点去，卖完就收</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-media">
+                        <img src="images/胡羊焖饼.jpg"
+                             alt="胡羊焖饼">
+                    </div>
+                    <div class="food-body">
+                        <h3 class="food-name">胡羊焖饼</h3>
+                        <p class="food-desc">羊肉炖到软烂，饼撕成大块铺在肉上焖，饼吸饱汤汁。一份够两三人分。</p>
+                        <dl class="food-meta">
+                            <div class="food-meta-row"><dt>参考价</dt><dd>约 60–80 元 / 份</dd></div>
+                            <div class="food-meta-row"><dt>去哪吃</dt><dd>本地家常菜馆</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-media">
+                        <img src="images/敦煌酿皮.jpg"
+                             alt="敦煌酿皮">
+                    </div>
+                    <div class="food-body">
+                        <h3 class="food-name">敦煌酿皮</h3>
+                        <p class="food-desc">面皮蒸制后切条，浇醋、辣油、蒜水，酸辣爽口。夏天在夜市边走边吃最合适。</p>
+                        <dl class="food-meta">
+                            <div class="food-meta-row"><dt>参考价</dt><dd>约 8–12 元</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-media">
+                        <img src="images/烤羊排与手抓羊肉.jpg"
+                             alt="烤羊排与手抓羊肉">
+                    </div>
+                    <div class="food-body">
+                        <h3 class="food-name">烤羊排、手抓羊肉</h3>
+                        <p class="food-desc">敦煌的羊肉几乎没有膻味，清水煮就够香。烤羊排按斤计，趁热吃。</p>
+                        <dl class="food-meta">
+                            <div class="food-meta-row"><dt>参考价</dt><dd>按斤，约 80–120 元 / 斤</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-media">
+                        <img src="images/沙葱牛肉饼.jpg"
+                             alt="沙葱牛肉饼">
+                    </div>
+                    <div class="food-body">
+                        <h3 class="food-name">沙葱牛肉饼</h3>
+                        <p class="food-desc">戈壁沙葱切碎拌牛肉做馅，饼皮酥脆带焦香，是本地人从小吃到大的小吃。</p>
+                        <dl class="food-meta">
+                            <div class="food-meta-row"><dt>参考价</dt><dd>约 8–15 元</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 分区二：带走伴手礼 ================= -->
+    <section class="food-section is-gift">
+        <div class="wrap">
+            <header class="food-section-head">
+                <p class="section-eyebrow">PART TWO</p>
+                <h2 class="section-heading">带走伴手礼</h2>
+                <p class="food-section-note">能装进行李箱的敦煌。</p>
+            </header>
+
+            <div class="gift-list">
+
+                <article class="gift-item">
+                    <div class="gift-media">
+                        <img src="images/杏皮水、李广杏干.webp"
+                             alt="杏皮水与李广杏干">
+                    </div>
+                    <div class="gift-body">
+                        <h3 class="gift-name">杏皮水、李广杏干</h3>
+                        <p class="gift-desc">用敦煌李广杏干熬煮，酸甜带杏香，冰镇最好喝。瓶装可带上车，杏干轻便耐放，是最合适的伴手礼。</p>
+                        <p class="gift-price">现制饮品约 5–10 元；杏干约 30–60 元 / 斤</p>
+                    </div>
+                </article>
+
+                <article class="gift-item">
+                    <div class="gift-media">
+                        <img src="images/敦煌蜜瓜.webp"
+                             alt="敦煌蜜瓜">
+                    </div>
+                    <div class="gift-body">
+                        <h3 class="gift-name">敦煌蜜瓜</h3>
+                        <p class="gift-desc">昼夜温差大、日照长，糖分攒得足，七八月最甜。整只不好带，可以让摊主切好装盒。</p>
+                        <p class="gift-price">七八月上市，按斤计价</p>
+                    </div>
+                </article>
+
+                <article class="gift-item">
+                    <div class="gift-media">
+                        <img src="images/阳关葡萄.jpg"
+                        alt="阳关葡萄">
+                      </div>
+                    <div class="gift-body">
+                        <h3 class="gift-name">阳关葡萄</h3>
+                        <p class="gift-desc">阳关一带的葡萄，颗粒紧实、甜度高，八九月份上市。葡萄干也值得买。</p>
+                        <p class="gift-price">八九月份上市，葡萄干常年有售</p>
+                    </div>
+                </article>
+
+                <article class="gift-item">
+                    <div class="gift-media">
+                        <img src="images/夜光杯.jpg"
+                             alt="夜光杯">
+                    </div>
+                    <div class="gift-body">
+                        <h3 class="gift-name">夜光杯</h3>
+                        <p class="gift-desc">「葡萄美酒夜光杯」的那只杯。祁连玉雕成，薄如纸、对着光呈墨绿色，倒酒后在暗处有微光。价位从百元到上千不等，按工艺和玉料分。</p>
+                        <p class="gift-price">买处：正规工艺品店，注意索要证书</p>
+                    </div>
+                </article>
+
+                <article class="gift-item">
+                    <div class="gift-media">
+                        <img src="images/敦煌文创.webp"
+                             alt="敦煌文创">
+                    </div>
+                    <div class="gift-body">
+                        <h3 class="gift-name">敦煌文创</h3>
+                        <p class="gift-desc">飞天书签、藻井图案丝巾、壁画临摹画、骆驼摆件。研究院文创店的东西最正，夜市摊位的更便宜。</p>
+                        <p class="gift-price">研究院文创店 / 沙洲夜市</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 页脚 ================= -->
+    <footer class="site-footer">
+        <div class="footer-bottom">一眼千年<br>© 2026 遇见敦煌 · 本站仅作学习交流使用 <br>
+          图片来源：敦煌研究院 / 公开资料</div>
+    </footer>
+
+    <script>
+        $(function () {
+            'use strict';
+
+            /* ---------- 小屏等比缩放：保持原有版式 ---------- */
+            var DESIGN_WIDTH = 1280;
+            function fitScreen() {
+                var scale = Math.min(1, window.innerWidth / DESIGN_WIDTH);
+                document.documentElement.style.setProperty('--page-scale', scale);
+                document.documentElement.style.zoom = scale;
+            }
+            $(window).on('resize', fitScreen);
+            fitScreen();
+
+            /* ---------- 导航：滚动吸顶 + 移动端菜单 ---------- */
+            var $header = $('#siteHeader');
+            var $navLinks = $('#navLinks');
+
+            function handleScroll() {
+                $header.toggleClass('scrolled', $(window).scrollTop() > 60);
+            }
+            $(window).on('scroll', handleScroll);
+            handleScroll();
+
+            $('#navToggle').on('click', function () {
+                $navLinks.toggleClass('open');
+            });
+            $navLinks.on('click', 'a', function () {
+                $navLinks.removeClass('open');
+            });
+        });
+    </script>
+</body>
+</html>

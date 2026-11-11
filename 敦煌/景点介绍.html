@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
+    <title>景点介绍</title>
+
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- 引入基本框架 -->
+    <script src="js/jquery.js"></script>
+    <!-- 框架库 -->
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+
+    <!-- ================= 顶部导航 ================= -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <div class="brand">
+                <span class="brand-main">敦煌</span>
+                <span class="brand-sub">一眼千年</span>
+            </div>
+            <button type="button" class="nav-toggle" id="navToggle" aria-label="展开导航">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">首页</a>
+                <a href="敦煌文化.html">敦煌文化</a>
+                <a href="景点介绍.html" class="active">景点介绍</a>
+                <a href="特产美食.html">特产美食</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= 首屏 ================= -->
+    <section class="spots-hero">
+        <img class="spots-hero-img"
+             src="images/OIP-C (7).webp"
+             alt="戈壁公路">
+        <div class="spots-hero-overlay"></div>
+        <div class="spots-hero-content">
+            <p class="culture-eyebrow">SITES OF DUNHUANG</p>
+            <h1>走一趟敦煌</h1>
+            <p class="culture-sub">一条需要提前排好顺序的路</p>
+        </div>
+        <p class="culture-hero-loc">敦煌・城外戈壁</p>
+    </section>
+
+    <!-- ================= 引言 ================= -->
+    <section class="spots-intro">
+        <div class="wrap">
+            <p class="spots-intro-lead">敦煌的景点散在城外的戈壁上，彼此相隔几十到一百多公里。</p>
+            <p class="spots-intro-text">它不是一座可以慢慢逛的城，是一条需要提前排好顺序的路。</p>
+        </div>
+    </section>
+
+    <!-- ================= 01 莫高窟 ================= -->
+    <article class="spot">
+        <div class="wrap">
+            <header class="spot-head">
+                <span class="spot-index">01</span>
+                <div class="spot-head-body">
+                    <p class="spot-pos">世界文化遗产・敦煌的全部理由</p>
+                    <h2 class="spot-title">莫高窟（千佛洞）</h2>
+                </div>
+            </header>
+            <div class="spot-grid">
+                <div class="spot-media">
+                    <img src="images/OIP-C.webp"
+                         alt="莫高窟九层楼与崖壁">
+                    <p class="spot-caption">九层楼依崖而起，是莫高窟最容易被认出的轮廓。</p>
+                </div>
+                <div class="spot-body">
+                    <p class="spot-desc">前秦建元二年（366 年）由僧人乐僔开凿，历经北凉至元十个朝代，现存洞窟 735 座、壁画 45000 ㎡、彩塑 2400 余身。1987 年列入《世界遗产名录》。</p>
+                    <div class="spot-list-block">
+                        <p class="spot-list-title">必看</p>
+                        <ul class="spot-list">
+                            <li>第 96 窟九层楼，标志性建筑</li>
+                            <li>第 45 窟盛唐彩塑一铺</li>
+                            <li>第 112 窟反弹琵琶</li>
+                            <li>第 17 窟藏经洞</li>
+                            <li>数字展示中心的球幕电影</li>
+                        </ul>
+                    </div>
+                    <p class="spot-tip">先看影像再进窟，理解会快很多。</p>
+                </div>
+            </div>
+            <div class="spot-facts">
+                <div class="fact">
+                    <span class="fact-label">门票</span>
+                    <p class="fact-value">旺季 A 类票约 238 元（含数字电影 + 8 个洞窟），B 类应急票约 100 元（4 个洞窟）；淡季约 140 元</p>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">预约</span>
+                    <p class="fact-value">必须提前在「莫高窟参观预约网」实名预约，旺季常提前一月售完</p>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">开放</span>
+                    <p class="fact-value">约 8:00–18:00，分批次入场</p>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">交通</span>
+                    <p class="fact-value">市区以东约 25 公里，车程 40 分钟，可打车或乘景区专线</p>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">耗时</span>
+                    <p class="fact-value">约 3–4 小时</p>
+                </div>
+                <div class="fact is-warn">
+                    <span class="fact-label">注意</span>
+                    <p class="fact-value">洞窟内禁止拍照摄像，禁止触摸壁画</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- ================= 02 鸣沙山月牙泉 ================= -->
+    <article class="spot is-alt">
+        <div class="wrap">
+            <header class="spot-head">
+                <span class="spot-index">02</span>
+                <div class="spot-head-body">
+                    <p class="spot-pos">沙山与泉共存千年的自然奇观</p>
+                    <h2 class="spot-title">鸣沙山月牙泉</h2>
+                </div>
+            </header>
+            <div class="spot-grid">
+                <div class="spot-media">
+                    <img src="images/月牙泉.jpg"
+                         alt="鸣沙山月牙泉">
+                    <p class="spot-caption">沙不填泉，泉不涸竭。</p>
+                </div>
+                <div class="spot-body">
+                    <p class="spot-desc">沙山环抱一弯月形泉水，沙不填泉、泉不涸竭。日落与日出是最好时段，光线斜扫沙脊时最出片。</p>
+                    <div class="spot-list-block">
+                        <p class="spot-list-title">建议</p>
+                        <ul class="spot-list">
+                            <li>下午四五点入园，玩到日落</li>
+                            <li>沙漠紫外线强，带防晒和外套</li>
+                            <li>昼夜温差大，日落后明显降温</li>
+                            <li>骑骆驼、滑沙、沙漠摩托另行收费</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="spot-facts">
+                <div class="fact">
+                    <span class="fact-label">门票</span>
+                    <p class="fact-value">约 110 元，通常支持数日内多次入园（以景区公告为准）</p>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">开放</span>
+                    <p class="fact-value">约 5:30–21:00（随季节调整）</p>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">交通</span>
+                    <p class="fact-value">市区以南 5 公里，打车约 15 分钟，也可乘 3 路公交</p>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">耗时</span>
+                    <p class="fact-value">2–3 小时</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- ================= 03 雅丹 ================= -->
+    <article class="spot">
+        <div class="wrap">
+            <header class="spot-head">
+                <span class="spot-index">03</span>
+                <div class="spot-head-body">
+                    <p class="spot-pos">风蚀出的土丘之城</p>
+                    <h2 class="spot-title">雅丹国家地质公园</h2>
+                </div>
+            </header>
+            <div class="spot-grid">
+                <div class="spot-media">
+                    <img src="images/R-C.webp"
+                         alt="雅丹地貌日落">
+                    <p class="spot-caption">大风过境，风声如呜咽，故得名「魔鬼城」。</p>
+                </div>
+                <div class="spot-body">
+                    <p class="spot-desc">第四纪湖相沉积被风蚀成垄岗与土丘，东西长 15 公里。大风过境时风声如呜咽，得名「魔鬼城」。日落时土丘呈现金红到暗紫的渐变。</p>
+                    <div class="spot-list-block">
+                        <p class="spot-list-title">建议</p>
+                        <ul class="spot-list">
+                            <li>园区内全程乘观光车</li>
+                            <li>自行徒步容易迷路</li>
+                            <li>无遮蔽，务必带水和防风装备</li>
+                            <li>通常与玉门关串成同一条线</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="spot-facts">
+                <div class="fact">
+                    <span class="fact-label">门票</span>
+                    <p class="fact-value">约 50 元，另需观光车约 70 元（西线）</p>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">交通</span>
+                    <p class="fact-value">市区西北约 180 公里，单程约 2.5 小时，建议包车或参加一日游</p>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">耗时</span>
+                    <p class="fact-value">含往返约 6–8 小时</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- ================= 04 玉门关 ================= -->
+    <article class="spot is-alt">
+        <div class="wrap">
+            <header class="spot-head">
+                <span class="spot-index">04</span>
+                <div class="spot-head-body">
+                    <p class="spot-pos">「春风不度玉门关」的那一道关</p>
+                    <h2 class="spot-title">玉门关 &amp; 汉长城</h2>
+                </div>
+            </header>
+            <div class="spot-grid">
+                <div class="spot-media">
+                    <img src="images/玉门关小方盘城遗址.jpg"
+                         alt="玉门关小方盘城遗址">
+                    <p class="spot-caption">遗址多为夯土残垣，朴素却沉重。</p>
+                </div>
+                <div class="spot-body">
+                    <p class="spot-desc">汉代丝绸之路出关节点，现存小方盘城遗址、汉长城残段与河仓城粮仓遗址。</p>
+                    <div class="spot-list-block">
+                        <p class="spot-list-title">建议</p>
+                        <ul class="spot-list">
+                            <li>与雅丹同线，可一天走完</li>
+                            <li>视觉效果朴素，先了解背景再去才会看得进去</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="spot-facts">
+                <div class="fact">
+                    <span class="fact-label">门票</span>
+                    <p class="fact-value">约 40 元，含玉门关、汉长城、河仓城</p>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">交通</span>
+                    <p class="fact-value">市区西北约 90 公里，车程约 1.5 小时</p>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">耗时</span>
+                    <p class="fact-value">约 1.5–2 小时</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- ================= 补充景点 ================= -->
+    <section class="more-spots">
+        <div class="wrap">
+            <header class="more-head">
+                <p class="section-eyebrow">MORE</p>
+                <h2 class="section-heading">补充景点</h2>
+            </header>
+            <div class="more-grid">
+                <article class="more-card">
+                    <h3 class="more-title">阳关</h3>
+                    <p class="more-desc">与玉门关相对，现存烽燧遗址，另有阳关博物馆。</p>
+                    <p class="more-meta">门票约 50 元 ・ 市区西南约 70 公里</p>
+                </article>
+                <article class="more-card">
+                    <h3 class="more-title">西千佛洞</h3>
+                    <p class="more-desc">莫高窟之外的小型石窟群，北魏至唐代，人少、安静，适合加半日行程。</p>
+                    <p class="more-meta">市区西南方向 ・ 可加半日</p>
+                </article>
+                <article class="more-card">
+                    <h3 class="more-title">敦煌博物馆</h3>
+                    <p class="more-desc">免费，周一闭馆，一小时把敦煌通史过一遍，看窟前先去效果很好。</p>
+                    <p class="more-meta">免费 ・ 周一闭馆</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 页脚 ================= -->
+    <footer class="site-footer">
+        <div class="footer-bottom">一眼千年<br>© 2026 遇见敦煌 · 本站仅作学习交流使用 <br>
+          图片来源：敦煌研究院 / 公开资料</div>
+    </footer>
+
+    <script>
+        $(function () {
+            'use strict';
+
+            /* ---------- 小屏等比缩放：保持原有版式 ---------- */
+            var DESIGN_WIDTH = 1280;
+            function fitScreen() {
+                var scale = Math.min(1, window.innerWidth / DESIGN_WIDTH);
+                document.documentElement.style.setProperty('--page-scale', scale);
+                document.documentElement.style.zoom = scale;
+            }
+            $(window).on('resize', fitScreen);
+            fitScreen();
+
+            /* ---------- 导航：滚动吸顶 + 移动端菜单 ---------- */
+            var $header = $('#siteHeader');
+            var $navLinks = $('#navLinks');
+
+            function handleScroll() {
+                $header.toggleClass('scrolled', $(window).scrollTop() > 60);
+            }
+            $(window).on('scroll', handleScroll);
+            handleScroll();
+
+            $('#navToggle').on('click', function () {
+                $navLinks.toggleClass('open');
+            });
+            $navLinks.on('click', 'a', function () {
+                $navLinks.removeClass('open');
+            });
+        });
+    </script>
+</body>
+</html>

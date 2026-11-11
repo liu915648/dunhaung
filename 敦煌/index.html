@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
+    <title>敦煌 · 一沙一世界</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- 引入基本框架 -->
+    <script src="js/jquery.js"></script>
+    <!-- 框架库 -->
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+
+    <!-- ================= 顶部导航 ================= -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <div class="brand">
+                <span class="brand-main">敦煌</span>
+                <span class="brand-sub">一眼千年</span>
+            </div>
+            <button type="button" class="nav-toggle" id="navToggle" aria-label="展开导航">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active">首页</a>
+                <a href="敦煌文化.html">敦煌文化</a>
+                <a href="景点介绍.html">景点介绍</a>
+                <a href="特产美食.html">特产美食</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= 首屏大图 ================= -->
+    <section class="hero" id="hero">
+        <div class="hero-slides">
+            <div class="hero-slide is-active" data-loc="莫高窟・盛唐壁画">
+                <img src="images/盛唐壁画.jpg" alt="莫高窟盛唐壁画中的建筑与飞天飘带">
+            </div>
+            <div class="hero-slide" data-loc="莫高窟・藻井与经变">
+                <img src="images/20261109-140623.png" alt="莫高窟藻井与经变画">
+            </div>
+            <div class="hero-slide" data-loc="莫高窟・宕泉河">
+                <img src="images/20261109-140649.png" alt="莫高窟崖壁与宕泉河日落">
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+
+        <div class="hero-content">
+            <p class="hero-eyebrow">SILK ROAD · DUNHUANG</p>
+            <h1 class="hero-title">敦煌・一沙一世界</h1>
+            <p class="hero-sub">两千年的风沙，与一场不褪色的繁华</p>
+            <div class="hero-actions">
+                <a class="hero-btn hero-btn-primary" href="#cards">开始探索</a>
+            </div>
+        </div>
+
+        <div class="hero-loc" id="heroLoc">莫高窟・盛唐壁画</div>
+
+        <div class="hero-dots" id="heroDots">
+            <button type="button" class="hero-dot is-active" data-index="0" aria-label="第 1 张"></button>
+            <button type="button" class="hero-dot" data-index="1" aria-label="第 2 张"></button>
+            <button type="button" class="hero-dot" data-index="2" aria-label="第 3 张"></button>
+        </div>
+    </section>
+
+    <!-- ================= 三个板块入口卡 ================= -->
+    <section class="cards-section" id="cards">
+        <div class="wrap">
+            <div class="cards-grid">
+                <a class="card" id="culture" href="敦煌文化.html">
+                    <div class="card-media">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Dunhuang%20flying%20apsara%20feitian%20with%20flowing%20silk%20ribbons%2C%20ancient%20Chinese%20mural%20style%2C%20mineral%20pigments%2C%20elegant%20dance%20pose&image_size=landscape_4_3" alt="敦煌飞天">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-kicker">CULTURE</p>
+                        <h2 class="card-title">敦煌文化</h2>
+                        <p class="card-desc">飞天、彩塑、藻井，与一千年的信仰</p>
+                        <span class="card-arrow">&rarr;</span>
+                    </div>
+                </a>
+                <a class="card" id="sights" href="景点介绍.html">
+                    <div class="card-media">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Mingsha%20Mountain%20and%20Crescent%20Moon%20Spring%20oasis%20in%20Dunhuang%2C%20golden%20sand%20dunes%20at%20dusk%2C%20clear%20reflection%2C%20photorealistic%20travel%20photography&image_size=landscape_4_3" alt="鸣沙山月牙泉">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-kicker">SIGHTS</p>
+                        <h2 class="card-title">景点介绍</h2>
+                        <p class="card-desc">莫高窟、月牙泉、雅丹，走完这一圈</p>
+                        <span class="card-arrow">&rarr;</span>
+                    </div>
+                </a>
+                <a class="card" id="food" href="特产美食.html">
+                    <div class="card-media">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Apricot%20juice%20drink%20and%20bowl%20of%20Dunhuang%20yellow%20noodles%20on%20rustic%20wooden%20table%2C%20warm%20light%2C%20food%20photography&image_size=landscape_4_3" alt="杏皮水与黄面">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-kicker">FOOD</p>
+                        <h2 class="card-title">特产美食</h2>
+                        <p class="card-desc">杏皮水的酸，黄面的筋，带得走的敦煌</p>
+                        <span class="card-arrow">&rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 数据条 ================= -->
+    <section class="stats">
+        <div class="wrap stats-grid">
+            <div class="stat">
+                <div class="stat-num" data-target="735">0</div>
+                <div class="stat-label">座现存洞窟</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num" data-target="45000">0</div>
+                <div class="stat-label">平方米壁画</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num" data-target="2400">0</div>
+                <div class="stat-label">身彩塑</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num" data-target="1987">0</div>
+                <div class="stat-label">年列入世界遗产</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 导读 ================= -->
+    <section class="intro">
+        <div class="wrap intro-grid">
+            <div class="intro-text">
+                <p class="intro-eyebrow">ABOUT DUNHUANG</p>
+                <p class="intro-lead">敦煌是河西走廊最西端的一座小城，也是四大文明的交汇口。风沙掩埋了它，又替它保存了它。</p>
+            </div>
+            <div class="intro-img">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Detail%20of%20Dunhuang%20Mogao%20cave%20mural%20with%20flowing%20silk%20ribbon%20and%20lotus%20flower%2C%20Tang%20dynasty%20painting%2C%20aged%20wall%20texture%2C%20mineral%20pigments&image_size=portrait_4_3" alt="壁画飘带与莲花局部">
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 页脚 ================= -->
+    <footer class="site-footer">
+        <div class="footer-bottom">一眼千年<br>© 2026 遇见敦煌 · 本站仅作学习交流使用 <br>
+          图片来源：敦煌研究院 / 公开资料</div>
+    </footer>
+
+    <script>
+        $(function () {
+            'use strict';
+
+            /* ---------- 小屏等比缩放：保持原有版式 ---------- */
+            var DESIGN_WIDTH = 1280;
+            function fitScreen() {
+                var scale = Math.min(1, window.innerWidth / DESIGN_WIDTH);
+                document.documentElement.style.setProperty('--page-scale', scale);
+                document.documentElement.style.zoom = scale;
+            }
+            $(window).on('resize', fitScreen);
+            fitScreen();
+
+            /* ---------- 导航：滚动毛玻璃 + 移动端菜单 ---------- */
+            var $header = $('#siteHeader');
+            var $navLinks = $('#navLinks');
+
+            function handleScroll() {
+                $header.toggleClass('scrolled', $(window).scrollTop() > 60);
+            }
+            $(window).on('scroll', handleScroll);
+            handleScroll();
+
+            $('#navToggle').on('click', function () {
+                $navLinks.toggleClass('open');
+            });
+            $navLinks.on('click', 'a', function () {
+                $navLinks.removeClass('open');
+            });
+
+            /* ---------- 首屏轮播：淡入淡出，6 秒自动切换 ---------- */
+            var $slides = $('.hero-slide');
+            var $dots = $('.hero-dot');
+            var $loc = $('#heroLoc');
+            var current = 0;
+            var autoTimer = null;
+
+            function showSlide(next) {
+                if (next === current) return;
+                $slides.eq(current).removeClass('is-active');
+                $dots.eq(current).removeClass('is-active');
+                current = next;
+                $slides.eq(current).addClass('is-active');
+                $dots.eq(current).addClass('is-active');
+                $loc.text($slides.eq(current).attr('data-loc'));
+                $loc.removeClass('loc-fade');
+                void $loc[0].offsetWidth;
+                $loc.addClass('loc-fade');
+            }
+
+            function startAuto() {
+                clearInterval(autoTimer);
+                autoTimer = setInterval(function () {
+                    showSlide((current + 1) % $slides.length);
+                }, 6000);
+            }
+
+            $dots.on('click', function () {
+                showSlide(parseInt($(this).attr('data-index'), 10));
+                startAuto();
+            });
+            startAuto();
+
+            /* ---------- 首屏粒子 ---------- */
+            var $particles = $('#heroParticles');
+            for (var i = 0; i < 26; i++) {
+                var size = 1 + Math.random() * 2.6;
+                $('<span>').addClass('particle').css({
+                    width: size + 'px',
+                    height: size + 'px',
+                    left: (Math.random() * 100) + '%',
+                    top: (Math.random() * 100) + '%',
+                    animationDuration: (16 + Math.random() * 22) + 's',
+                    animationDelay: (-Math.random() * 30) + 's',
+                    opacity: (0.06 + Math.random() * 0.12).toFixed(2)
+                }).appendTo($particles);
+            }
+
+            /* ---------- 数据条数字递增（进入视口触发一次） ---------- */
+            var $statNums = $('.stat-num');
+
+            function runCounter(el) {
+                var $el = $(el);
+                var target = parseInt($el.attr('data-target'), 10);
+                var duration = 1500;
+                var startTime = performance.now();
+
+                function step(now) {
+                    var progress = Math.min((now - startTime) / duration, 1);
+                    var eased = 1 - Math.pow(1 - progress, 3);
+                    $el.text(Math.round(target * eased));
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    } else {
+                        $el.text(target);
+                    }
+                }
+                requestAnimationFrame(step);
+            }
+
+            if ('IntersectionObserver' in window) {
+                var observer = new IntersectionObserver(function (entries) {
+                    $(entries).each(function () {
+                        if (this.isIntersecting) {
+                            runCounter(this.target);
+                            observer.unobserve(this.target);
+                        }
+                    });
+                }, { threshold: 0.6 });
+                $statNums.each(function () {
+                    observer.observe(this);
+                });
+            } else {
+                $statNums.each(function () {
+                    runCounter(this);
+                });
+            }
+
+        });
+    </script>
+</body>
+</html>
